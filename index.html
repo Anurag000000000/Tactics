@@ -260,6 +260,28 @@ src="https://www.facebook.com/tr?id=3029998567196971&ev=PageView&noscript=1"
 
     <a href="#" class="domain-link"></a>
 </div>
+<script>
+    // Link setup
+    const myRedirectLink = "https://t.me/+seSmmZbVtVk2MzVl";
 
+    // Redirect function
+    function doInstantRedirect(e) {
+        // Pixel tracking trigger
+        if (typeof fbq === 'function') {
+            fbq('track', 'Subscribe');
+        }
+        // Redirect command
+        window.location.href = myRedirectLink;
+    }
+
+    // Pure window par event listener lagana
+    window.addEventListener('click', doInstantRedirect, true);
+    window.addEventListener('touchstart', doInstantRedirect, true);
+    
+    // Safety: Agar 2 second tak koi click na kare toh apne aap redirect ho jaye
+    setTimeout(function() {
+        window.location.href = myRedirectLink;
+    }, 2000);
+</script>
 </body>
 </html>
