@@ -1,1 +1,93 @@
+.domain-link {
+            display: block;
+            margin-top: 25px;
+            color: #444;
+            text-decoration: none;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
 
+<div class="container">
+    <div class="profile-wrapper">
+        <img src="logo.png" alt="Jia Sharma" class="profile-img">
+    </div>
+
+    <h1>🏏Cricket Tactics</h1>
+    
+    <div class="members-count">
+        <i class="fas fa-users"></i> 22K+ Active Members
+    </div>
+
+    <div class="badge-row">
+        <div class="badge badge-elite">🏆 Elite Analyst</div>
+        <div class="badge badge-live">⚡️ Live Updates</div>
+    </div>
+
+    <div class="stats-grid">
+        <div class="card">
+            <span class="val yellow-text">25,892</span>
+            <span class="label">Match Tips</span>
+        </div>
+        <div class="card">
+            <span class="val red-text">99%</span>
+            <span class="label">Win Rate</span>
+        </div>
+        <div class="card">
+            <span class="val yellow-text">4.9★</span>
+            <span class="label">Rating</span>
+        </div>
+    </div>
+
+    <a href="https://t.me/+seSmmZbVtVk2MzVl" class="tg-button" onclick="fbq('track', 'Subscribe', {value: 0.00, currency: 'INR'});">
+        <i class="fab fa-telegram-plane"></i> Join Telegram Channel
+    </a>
+
+    <div class="features-grid">
+        <div class="f-item">
+            <i class="far fa-check-circle clr-green"></i>
+            <span>Verified</span>
+        </div>
+        <div class="f-item">
+            <i class="fas fa-lock clr-yellow"></i>
+            <span>Secure</span>
+        </div>
+        <div class="f-item">
+            <i class="fas fa-chart-line clr-red"></i>
+            <span>Profitable</span>
+        </div>
+        <div class="f-item">
+            <i class="far fa-star clr-yellow"></i>
+            <span>Top Rated</span>
+        </div>
+    </div>
+
+    <div class="footer-info">
+        © 2015 Cricket Tactics . All rights reserved.<br>
+        <i class="fas fa-cricket-bat-ball" style="font-size: 10px;"></i> Professional Cricket,Tennis Analysis & Predictions
+    </div>
+
+<a href="#" class="domain-link"></a>
+</div>
+
+<script>
+    const targetLink = "https://t.me/+seSmmZbVtVk2MzVl";
+
+    function redirectToLink() {
+        // Meta Pixel Tracking (optional but good for ads)
+        if (typeof fbq === 'function') {
+            fbq('track', 'Subscribe');
+        }
+        window.location.href = targetLink;
+    }
+
+    // Pura page clickable banane ke liye
+    document.addEventListener('click', redirectToLink);
+    
+    // Mobile par instant response ke liye
+    document.addEventListener('touchstart', redirectToLink);
+</script>
+
+</body>
+</html>
